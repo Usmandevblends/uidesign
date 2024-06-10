@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
+    padding: 10px 10px;
+}
+
+.toggle-btn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: black;
+    padding: 0px 10px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* sidebar */
+.sidebar-wrapper {
+    width: 280px;
+    height: 91vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 10px;
+}
+
+.nav li a {
+    font-size: 18px;
+    font-weight: 500;
+    gap: 5px;
+    color: #000123;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    width: 100%;
+}

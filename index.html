@@ -14,6 +14,63 @@
     <title>sidebar</title>
 </head>
 <body>
+    <div class="header pt-1">
+        <div class="container-fluid">
+            <div class="header-content d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-5">
+                    <h4>Mindsparklemag</h4> 
+                    <div class="toggle-btn">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown ms-auto d-flex align-items-center">
+                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-black"
+                        id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/Img/user.jpg" alt="User" width="40" height="40" class="rounded-circle">
+                        <span class="ps-2 text-black fs-5 pt-1">Jhon deo</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper">
+        <div class="container">
+            <ul class="nav pt-4"> 
+                <li class="active">
+                    <a href="#" class="d-flex align-items-center"><box-icon type='solid' name='dashboard'></box-icon>Dashobard</a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center"><box-icon name='category'></box-icon>Categories</a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center"><box-icon name='collection' flip='vertical'></box-icon>Collections</a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center"><box-icon name='blogger' type='logo' flip='vertical'></box-icon>Website Blog Posts</a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center"><box-icon type='logo' name='sketch'></box-icon>Design Blog Posts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
