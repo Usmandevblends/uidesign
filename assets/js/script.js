@@ -13,10 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
 function toggleSidebar() {
-    var sidebar = document.getElementById('sidebar');
-    var mainContent = document.getElementById('mainContent');
-    sidebar.classList.toggle('sidebar-collapsed');
-    mainContent.classList.toggle('main-collapsed');
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    if (window.innerWidth <= 576) {
+        sidebar.classList.toggle('show');
+    } else {
+        sidebar.classList.toggle('sidebar-collapsed');
+        mainContent.classList.toggle('main-collapsed');
+    }
 }
