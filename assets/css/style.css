@@ -28,17 +28,15 @@ h6 {
 .toggle-btn {
     font-size: 24px;
     cursor: pointer;
-    background-color: black;
     padding: 0px 10px;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: #03045e;
 }
 
 /* sidebar */
 .sidebar-wrapper {
+    background-color: #03045e;
     width: 280px;
-    height: 91vh;
+    height: 91.5vh;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -52,24 +50,30 @@ h6 {
     font-size: 18px;
     font-weight: 500;
     gap: 5px;
-    color: #000123;
+    color: #ffffff;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px;
 }
 
 .active {
-    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(7, 77, 112, 0.1);
+    background: rgba(255, 255, 255, 1);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
     width: 100%;
 }
+.active a {
+    color: #03045e !important;
+}
+
+
+/* Add transition for smooth effect */
+.sidebar-wrapper {
+    transition: transform 0.3s ease;
+}
+
+/* Hide the sidebar */
+.sidebar-collapsed {
+    transform: translateX(-100%);
+}
+
+

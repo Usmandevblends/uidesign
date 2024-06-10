@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function toggleSidebar() {
+    var sidebar = document.getElementById('sidebar');
+    var mainContent = document.getElementById('mainContent');
+    sidebar.classList.toggle('sidebar-collapsed');
+    mainContent.classList.toggle('main-collapsed');
+}
