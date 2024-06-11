@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
     user-select: none;
 }
-
 body {
     font-family: "Montserrat", sans-serif;
 }
-
 h1,
 h2,
 h3,
@@ -22,33 +19,25 @@ h6 {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
     padding: 10px 10px;
 }
-
 .toggle-btn {
     font-size: 24px;
     cursor: pointer;
     padding: 0px 10px;
     color: #03045e;
 }
-
 /* sidebar */
 .sidebar-wrapper {
-    position: fixed;
     top: 55px;
     background-color: #03045e;
     width: 280px;
     height: 100vh;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: width 0.3s ease;
-    overflow: hidden;
 }
-
 .nav {
-    display: flex;
     gap: 1.5rem;
     margin-left: 10px;
-    flex-direction: column;
 }
-
 .nav li a {
     font-size: 18px;
     font-weight: 400;
@@ -60,29 +49,24 @@ h6 {
     align-items: center;
     transition: opacity 0.3s ease;
 }
-
 .nav li a span {
     margin-left: 10px;
 }
-
 .active {
     box-shadow: 0 4px 30px rgba(7, 77, 112, 0.1);
     background: rgba(255, 255, 255, 1);
     border-radius: 16px;
     width: 100%;
 }
-
 .active a {
     color: #03045e !important;
 }
-
 /* Main content */
 .main-content {
     margin-left: 300px;
     padding: 20px;
     transition: margin-left 0.3s ease;
 }
-
 /* Collapse sidebar */
 .sidebar-collapsed {
     width: 80px;
@@ -91,12 +75,10 @@ h6 {
 .sidebar-collapsed .nav li a span {
     display: none;
 }
-
 /* Collapse main content */
 .main-collapsed {
-    margin-left: 80px;
+    margin-left: 100px;
 }
-
 /* Media query for responsive design */
 @media (max-width: 768px) {
     .sidebar-wrapper {
@@ -115,7 +97,6 @@ h6 {
         margin-left: 80px;
     }
 }
-
 /* For even smaller screens */
 @media (max-width: 576px) {
     .sidebar-wrapper {
@@ -139,4 +120,9 @@ h6 {
     .main-collapsed {
         margin-left: 0;
     }
+}
+
+/* dashboard */
+.main-content .box {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
