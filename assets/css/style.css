@@ -15,22 +15,27 @@ h5,
 h6 {
     font-family: "Montserrat", sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
 .header {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
     padding: 10px 10px;
+    background-color: #03045e;
 }
 .toggle-btn {
     font-size: 24px;
     cursor: pointer;
     padding: 0px 10px;
-    color: #03045e;
+    color: #ffffff;
 }
 /* sidebar */
 .sidebar-wrapper {
-    top: 55px;
+    top: 50px;
     background-color: #03045e;
     width: 280px;
-    height: 100vh;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: width 0.3s ease;
 }
@@ -128,6 +133,7 @@ h6 {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px 10px;
     height: 150px;
+    border-radius: 5px;
 }
 .box .heading h6 {
     font-size: 18px;
@@ -146,6 +152,8 @@ h6 {
 .box .astimate .icon {
     background:#E0F8E9;
     border-radius: 100px;
+    width: 50px;
+    height: 50px;
 }
 .box .astimate .icon .fas{
     font-size: 24px;
@@ -155,8 +163,106 @@ h6 {
     font-size: 24px;
     color: #4062F2;
 }
+
+.box .astimate .icon .green{
+    font-size: 24px;
+    color: #2ab46f;
+}
+
+.box .astimate .icon .fa{
+    font-size: 24px;
+    color: #FF763D;
+}
+
+.box .astimate .shop h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box .astimate .shop h6 span {
+    font-size: 15px;
+    color: #2ab46f;
+}
+
+.box .astimate .shop h6 .danger {
+    font-size: 15px;
+    color: #FF763D;
+}
+
+
+
+
+.box .astimate .shop h6 em {
+    font-size: 15px;
+    font-style: normal;
+    color: gray;
+    font-weight: 400;
+}
+
 /* chart */
 .bg {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Table */
+
+.containerborder {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #FFF;
+    padding: 10px 15px;
+    border-radius: 2px;
+
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Improved alignment */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse; 
+}
+
+.table-responsive {
+    max-height: 400px; 
+    overflow-y: auto;
+}
+
+.table thead th {
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+}
+
+.status-approved {
+    color: white;
+    background-color: #28a745;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+
+.status-pending {
+    color: white;
+    background-color: #ffc107;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight:400;
+}
+
+.status-rejected {
+    color: white;
+    background-color: #dc3545;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+th {
+    font-size: 15px;
+}
+td {
+    color: #A8B4FD;
 }
