@@ -30,23 +30,10 @@ function toggleSidebar() {
     }
   }
 
-  // 
-
-  let creditCounter = 1;
-
-  document.getElementById('addCreditBtn').addEventListener('click', function () {
-      creditCounter++;
-      const creditDiv = document.createElement('div');
-      creditDiv.classList.add('form-group');
-      creditDiv.innerHTML = `
-          <div class="form-row">
-              <div class="col">
-                  <input type="text" class="form-control" id="credit${creditCounter}" placeholder="Name + Role">
-              </div>
-              <div class="col">
-                  <input type="text" class="form-control" id="url${creditCounter}" placeholder="Url Link">
-              </div>
-          </div>
-      `;
-      document.getElementById('moreCredits').appendChild(creditDiv);
+  let table = new DataTable('#example');
+ 
+  table.on('click', 'tbody tr', function () {
+      let data = table.row(this).data();
+   
+      alert('You clicked on ' + data[0] + "'s row");
   });
