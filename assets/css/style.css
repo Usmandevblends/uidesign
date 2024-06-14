@@ -24,6 +24,7 @@ a {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 10px;
     padding: 10px 10px;
     background-color: #03045e;
+    z-index: 99;
 }
 .toggle-btn {
     font-size: 24px;
@@ -38,6 +39,7 @@ a {
     width: 280px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: width 0.3s ease;
+    z-index: 99;
 }
 .nav {
     gap: 1.5rem;
@@ -221,20 +223,10 @@ a {
 }
 
 /* Improved alignment */
-.table {
-    width: 100%;
-    margin-bottom: 0;
-    border-collapse: collapse; 
-}
 
-.table-responsive {
-    max-height: 400px; 
-    overflow-y: auto;
-}
 
 .table thead th {
     color: rgb(0, 0, 0);
-    white-space: nowrap;
 }
 
 .status-approved {
@@ -261,7 +253,8 @@ a {
     font-weight: 400;
 }
 th {
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 500;
 }
 td {
     color: #A8B4FD;
