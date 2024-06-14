@@ -29,3 +29,24 @@ function toggleSidebar() {
       mainContent.classList.toggle("hidden");
     }
   }
+
+  // 
+
+  let creditCounter = 1;
+
+  document.getElementById('addCreditBtn').addEventListener('click', function () {
+      creditCounter++;
+      const creditDiv = document.createElement('div');
+      creditDiv.classList.add('form-group');
+      creditDiv.innerHTML = `
+          <div class="form-row">
+              <div class="col">
+                  <input type="text" class="form-control" id="credit${creditCounter}" placeholder="Name + Role">
+              </div>
+              <div class="col">
+                  <input type="text" class="form-control" id="url${creditCounter}" placeholder="Url Link">
+              </div>
+          </div>
+      `;
+      document.getElementById('moreCredits').appendChild(creditDiv);
+  });

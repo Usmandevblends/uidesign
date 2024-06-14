@@ -69,19 +69,19 @@
     <!-- Main Content -->
     <div class="main-content mt-5" id="mainContent">
       <div class="container-fluid">
-          <div class="row align-items-center">
+          <div class="row">
               <div class="col-lg-12">
                   <div class="container">
                     <div class="mb-3 d-flex justify-content-between">
                       <div>
                           <div class="d-flex gap-2">
-                            <p class="pt-1">Show</p>
+                            <p class="pt-1 fw-semibold">Show</p>
                               <select class="custom-select" id="entriesPerPage" style="width: 60px;height: 32px;border: 1px solid black;border-radius: 2px;">
                                   <option value="5">5</option>
                                   <option value="10" selected>10</option>
                                   <option value="15">15</option>
                               </select>
-                              <p class="pt-1 fw-5">Enteries</p>
+                              <p class="pt-1 fw-semibold">Enteries</p>
                           </div>
                       </div>
                       <div>
@@ -89,7 +89,7 @@
                               placeholder="Search..." style="width: 150px" />
                       </div>
                   </div>
-                      <div class="table-wrapper" style="height: 500px; overflow-y: auto;">
+                      <div class="table-wrapper" style=" overflow-y: auto;">
                           <table class="table table-striped table-hover">
                               <thead>
                                   <tr>
@@ -169,6 +169,45 @@
                       </div>
                   </div>
               </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">PRO Credits</h5>
+                        <div class="form-group">
+                            <label for="proCreator" class="d-block">Is the creator a PRO creator?</label>
+                            <div class="toggle-switch">
+                                <input type="checkbox" id="proCreator">
+                                <label for="proCreator"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectProCreator">Search & Select PRO creator</label>
+                            <select class="form-control" id="selectProCreator">
+                                <option>Select PRO creator</option>
+                                <!-- Add options here -->
+                            </select>
+                        </div>
+                        <div id="moreCredits">
+                            <div class="form-group">
+                                <label for="credit1">More Credits <span class="text-danger">*</span></label>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="credit1" placeholder="Name + Role">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="url1" placeholder="Url Link">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-dark" id="addCreditBtn">Add +1 Credit</button>
+                    </div>
+                </div>
+            </div>
+            </div>
           </div>
       </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

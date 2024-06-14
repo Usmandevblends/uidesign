@@ -260,4 +260,36 @@ td {
     color: #A8B4FD;
 }
 
-/* chart  */
+/* Credits  */
+.toggle-switch {
+    display: flex;
+    align-items: center;
+}
+.toggle-switch input {
+    display: none;
+}
+.toggle-switch label {
+    background-color: #ddd;
+    border-radius: 34px;
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+    width: 48px;
+}
+.toggle-switch label::after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: 0.2s;
+    width: 20px;
+}
+.toggle-switch input:checked + label {
+    background-color: #007bff;
+}
+.toggle-switch input:checked + label::after {
+    transform: translateX(24px);
+}
