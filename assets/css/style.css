@@ -225,3 +225,11 @@ th {
 td {
     font-size: 15px;
 }
+
+/*  */
+.credit-row {
+    margin-bottom: 15px;
+}
+.btn-danger {
+    margin-left: 10px;
+}

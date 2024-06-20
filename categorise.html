@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +18,7 @@
   <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.min.js"></script>
   <title>Sidebar</title>
 </head>
+
 <body>
   <div class="header pt-1 position-fixed w-100 top-0">
     <div class="container-fluid">
@@ -78,71 +80,114 @@
         <div class="col-lg-12">
           <table id="example" class="table table-striped" style="width:100%">
             <thead>
-                <tr>
-                    <th>Preview</th>
-                    <th>Title</th>
-                    <th>Pro</th>
-                    <th>Plus</th>
-                    <th>Start date</th>
-                    <th>Category</th>
-                    <th>Status</th>
-                    <th>Publish At</th>
-                    <th>Action</th>
-                </tr>
+              <tr>
+                <th>Preview</th>
+                <th>Title</th>
+                <th>Pro</th>
+                <th>Plus</th>
+                <th>Start date</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Publish At</th>
+                <th>Action</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011-04-25</td>
-                    <td>$320,800</td>
-                </tr>
-                <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011-07-25</td>
-                    <td>$170,750</td>
-                </tr>
-                <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009-01-12</td>
-                    <td>$86,000</td>
-                </tr>
-                <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012-03-29</td>
-                    <td>$433,060</td>
-                </tr>
-                <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008-11-28</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2012-12-02</td>
-                    <td>$372,000</td>
-                </tr>
+              <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011-04-25</td>
+                <td>$320,800</td>
+                <td>
+                  <button class="btn btn-warning">Sheduled</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Garrett Winters</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>63</td>
+                <td>2011-07-25</td>
+                <td>$170,750</td>
+                <td>
+                  <button class="btn btn-warning">Sheduled</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Ashton Cox</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>66</td>
+                <td>2009-01-12</td>
+                <td>$86,000</td>
+              </tr>
+              <tr>
+                <td>Cedric Kelly</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>22</td>
+                <td>2012-03-29</td>
+                <td>$433,060</td>
+              </tr>
+              <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2008-11-28</td>
+                <td>$162,700</td>
+              </tr>
+              <tr>
+                <td>Brielle Williamson</td>
+                <td>Integration Specialist</td>
+                <td>New York</td>
+                <td>61</td>
+                <td>2012-12-02</td>
+                <td>$372,000</td>
+              </tr>
             </tbody>
           </table>
         </div>
       </div>
+    </div>
+
+
+    <div class="col-lg-8">
+      <div class="container mt-5">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PRO Credits</h5>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="isProCreator">
+              <label class="form-check-label" for="isProCreator">Is the creator a PRO creator?</label>
+            </div>
+            <div class="form-group">
+              <label for="proCreatorSelect">Search & Select PRO creator</label>
+              <select class="form-control" id="proCreatorSelect">
+                <option>Select a PRO creator</option>
+                <!-- Add options here -->
+              </select>
+            </div>
+            <div id="moreCredits">
+              <div class="credit-row form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Name + Role">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Url Link">
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-danger remove-credit" type="button">Remove</button>
+                </div>
+              </div>
+            </div>
+            <button id="addCredit" class="btn btn-dark" type="button">Add +1 Credit</button>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="//cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -154,4 +199,5 @@
       // });
     </script>
 </body>
+
 </html>
