@@ -85,7 +85,6 @@
                 <th>Title</th>
                 <th>Pro</th>
                 <th>Plus</th>
-                <th>Start date</th>
                 <th>Category</th>
                 <th>Status</th>
                 <th>Publish At</th>
@@ -101,7 +100,10 @@
                 <td>2011-04-25</td>
                 <td>$320,800</td>
                 <td>
-                  <button class="btn btn-warning">Sheduled</button>
+                  <button class="btn btn-warning rounded-pill">Sheduled</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
                 </td>
               </tr>
               <tr>
@@ -112,7 +114,10 @@
                 <td>2011-07-25</td>
                 <td>$170,750</td>
                 <td>
-                  <button class="btn btn-warning">Sheduled</button>
+                  <button class="btn btn-warning rounded-pill">Sheduled</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
                 </td>
               </tr>
               <tr>
@@ -122,6 +127,12 @@
                 <td>66</td>
                 <td>2009-01-12</td>
                 <td>$86,000</td>
+                <td>
+                  <button class="btn btn-warning rounded-pill">Sheduled</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                </td>
               </tr>
               <tr>
                 <td>Cedric Kelly</td>
@@ -130,6 +141,12 @@
                 <td>22</td>
                 <td>2012-03-29</td>
                 <td>$433,060</td>
+                <td>
+                  <button class="btn btn-secondary rounded-pill">Draft</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                </td>
               </tr>
               <tr>
                 <td>Airi Satou</td>
@@ -138,6 +155,12 @@
                 <td>33</td>
                 <td>2008-11-28</td>
                 <td>$162,700</td>
+                <td>
+                  <button class="btn btn-secondary rounded-pill">Draft</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                </td>
               </tr>
               <tr>
                 <td>Brielle Williamson</td>
@@ -146,15 +169,19 @@
                 <td>61</td>
                 <td>2012-12-02</td>
                 <td>$372,000</td>
+                <td>
+                  <button class="btn btn-success rounded-pill">Published</button>
+                </td>
+                <td>
+                  <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
-
-
-    <div class="col-lg-8">
+    <div class="col-lg-12">
       <div class="container mt-5">
         <div class="card">
           <div class="card-body">
@@ -187,16 +214,15 @@
           </div>
         </div>
       </div>
-
     </div>
     <script src="//cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/chart.js"></script>
     <script>
-      // $(document).ready(function() {
-      //     $('#example').DataTable();
-      // });
+      $(document).ready(function() {
+          $('#example').DataTable();
+      });
     </script>
 </body>
 
