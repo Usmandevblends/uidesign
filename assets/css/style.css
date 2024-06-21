@@ -6,6 +6,7 @@
 }
 body {
     font-family: "Montserrat", sans-serif;
+    transition: 55s;
 }
 h1,
 h2,
@@ -38,7 +39,7 @@ a {
     background-color: #03045e;
     width: 280px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: width 0.3s ease;
+    transition: 0.5s ease;
     z-index: 99;
 }
 .nav {
