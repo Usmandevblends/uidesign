@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #F4F7FE;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* profile */
+.profile {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.profile-content h4 {
+    font-size: 24px;
+    color: #03045e;
+}
+
+.profile-content span {
+    font-size: 15px;
+    color: #03045e;
+}
+
+.profile .social-icons {
+    margin-right: 30px;
+}
+
+.profile-about {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
