@@ -17,35 +17,79 @@ li {
 }
 
 body {
-    background-color: #F4F7FE;
+    background-color: #f4f7fe;
     font-family: "Montserrat", sans-serif;
 }
+        /* Custom styles */
+        .profile {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .profile-content h4 {
+            font-size: 24px;
+            color: #03045e;
+        }
+        .profile-content span {
+            font-size: 15px;
+            color: #03045e;
+        }
+        .profile .social-icons {
+            margin-right: 30px;
+        }
+        .profile-about {
+            width: 100%;
+            background-color: #fff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        /* Custom tab styles */
+        .nav-tabs {
+            border-bottom: 2px solid #007bff;
+            padding-top: 5px;
+        }
+        .nav-tabs .nav-item {
+            margin-bottom: -1px;
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            border-radius: 0;
+            color: #000;
+            background-color: transparent;
+            font-size: 16px;
+        }
+        .nav-tabs .nav-link.active {
+            border: none;
+            color: #03045e;
+            padding: 7px 8px;
+            font-weight: 500;
+            background: none;
+        }
+        .tab-pane h4 {
+            font-size: 30px;
+            color: #03045e;
+        }
+        .profile-details ul li {
+            margin-left: -30px;
+        }
+        .profile-details .detail {
+            gap: 6rem;
+        }
 
-/* profile */
-.profile {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-
-.profile-content h4 {
-    font-size: 24px;
-    color: #03045e;
-}
-
-.profile-content span {
-    font-size: 15px;
-    color: #03045e;
-}
-
-.profile .social-icons {
-    margin-right: 30px;
-}
-
-.profile-about {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
+        /* Media queries for responsiveness */
+        @media (max-width: 992px) {
+            .profile-content h4 {
+                font-size: 20px;
+            }
+            .profile-content span {
+                font-size: 14px;
+            }
+            .nav-tabs .nav-link {
+                font-size: 14px;
+            }
+            .tab-pane h4 {
+                font-size: 26px;
+            }
+            .profile-details .detail {
+                gap: 3rem;
+            }
+        }
