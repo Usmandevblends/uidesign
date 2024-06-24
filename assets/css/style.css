@@ -283,7 +283,7 @@ td {
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #03045e;
   }
 
   input:checked + .slider:before {
