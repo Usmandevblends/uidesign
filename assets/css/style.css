@@ -18,7 +18,7 @@ h6 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .header {
@@ -218,7 +218,13 @@ a {
 
 }
 
-/*  */
+.breadcrumb .breadcrumb-item a {
+    color: #03045e !important;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+/* table */
 th {
     font-size: 12px;
 }
@@ -238,7 +244,7 @@ td {
     padding: 2px 8px !important;
     color: #ffffff !important;
 }
-/*  */
+/* modle */
 .credit-row {
     margin-bottom: 15px;
 }
