@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +17,7 @@
   <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.min.js"></script>
   <title>Sidebar</title>
 </head>
+
 <body>
   <div class="header pt-1 position-fixed w-100 top-0">
     <div class="container-fluid">
@@ -46,7 +48,7 @@
   </div>
   <!-- Sidebar -->
   <div class="sidebar-wrapper position-fixed vh-100" id="sidebar">
-    <div class="container">
+    <div class="container-fluid">
       <ul class="nav pt-4 d-flex flex-column">
         <li class="active">
           <a href="index.html" class="d-flex align-items-center"><i
@@ -73,6 +75,20 @@
   <!-- Main Content -->
   <div class="main-content mt-5" id="mainContent">
     <div class="container-fluid">
+      <div class="top d-flex align-items-center justify-content-between">
+        <div class="breadcrums">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+            </ol>
+          </nav>
+        </div>
+        <div class="topbtn">
+          <button type="button" class="btn btn-primary mb-3 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+            New</button>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-12">
           <table id="example" class="table table-striped" style="width:100%">
@@ -178,48 +194,63 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-12">
-      <div class="container mt-5">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">PRO Credits</h5>
-            <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="isProCreator">
-              <label class="form-check-label" for="isProCreator">Is the creator a PRO creator?</label>
-            </div>
-            <div class="form-group">
-              <label for="proCreatorSelect">Search & Select PRO creator</label>
-              <select class="form-control" id="proCreatorSelect">
-                <option>Select a PRO creator</option>
-                <!-- Add options here -->
-              </select>
-            </div>
-            <div id="moreCredits">
-              <div class="credit-row form-row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Name + Role">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Url Link">
-                </div>
-                <div class="col-auto">
-                  <button class="btn btn-danger remove-credit" type="button">Remove</button>
+  </div>
+  <!-- Modale -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title d-flex justify-content-between align-items-center">
+                PRO Credits
+                <label class="toggle-btn">
+                  <input type="checkbox" id="isProCreator">
+                  <span class="slider"></span>
+                </label>
+              </h5>
+              <div class="form-group d-flex flex-column justify-content-start>
+                <label for="proCreatorSelect" class="select">Search & Select PRO creator</label>
+                <select class="form-control" id="proCreatorSelect">
+                  <option>Select a PRO creator</option>
+                  <!-- Add options here -->
+                </select>
+              </div>
+              <div id="moreCredits">
+                <div class="credit-row form-row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Name + Role">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Url Link">
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-danger remove-credit" type="button">Remove</button>
+                  </div>
                 </div>
               </div>
+              <button id="addCredit" class="btn btn-dark" type="button">Add +1 Credit</button>
             </div>
-            <button id="addCredit" class="btn btn-dark" type="button">Add +1 Credit</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="//cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/chart.js"></script>
-    <script>
-      $(document).ready(function () {
-        $('#example').DataTable();
-      });
-    </script>
+  </div>
+
+  <script src="//cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/chart.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#example').DataTable();
+    });
+  </script>
 </body>
+
 </html>
