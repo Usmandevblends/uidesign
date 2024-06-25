@@ -1,0 +1,21 @@
+.accordion-flush .accordion-item {
+    border: none; 
+}
+.accordion-button {
+    border: none; 
+    background:none;
+    color: #03045e;
+}
+
+.accordion-button:focus {
+    box-shadow: none; 
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 250px;
+}
+.cards {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    height: 250px;
+}
