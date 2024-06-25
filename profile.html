@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +10,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/profile.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/user.png" type="image/x-icon">
     <title>Profile</title>
 </head>
-
 <body>
     <div class="header pt-1 position-fixed w-100 top-0">
         <div class="container-fluid">
             <div class="header-content d-flex align-items-center justify-content-between">
                 <div class="logo">
-                    <h4 class="text-white py-1">Mindsparklemag</h4>
+                    <h4 class="text-white mt-2">Mindsparklemag</h4>
                 </div>
                 <div class="dropdown ms-auto d-flex align-items-center h-25">
                     <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-white"
@@ -28,7 +27,7 @@
                         <span class="ps-2 text-white fs-5 pt-1">Jhon deo</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">Components</a></li>
+                        <li><a class="dropdown-item" href="component.html">Components</a></li>
                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Settings</a></li>
                         <li>
@@ -40,8 +39,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="margin-top: 80px;">
-        <nav aria-label="breadcrumb" >
+    <div class="container-fluid" style="margin-top: 65px;">
+        <nav aria-label="breadcrumb">
             <ol class="breadcrumb ">
                 <li class="breadcrumb-item fs-5"><a href="index.html">Home</a></li>
                 <li class="breadcrumb-item fs-5 "><a href="">User</a></li>
@@ -72,22 +71,30 @@
                 <div class="profile-about overflow-hidden">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true">Overview</a>
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home-tab-pane"
+                                role="tab" aria-controls="home-tab-pane" aria-selected="true">Overview</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Edit Profile</a>
+                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile-tab-pane"
+                                role="tab" aria-controls="profile-tab-pane" aria-selected="false">Edit Profile</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Setting</a>
+                            <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact-tab-pane"
+                                role="tab" aria-controls="contact-tab-pane" aria-selected="false">Setting</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="change-password-tab" data-bs-toggle="tab" href="#change-password-tab-pane" role="tab" aria-controls="change-password-tab-pane" aria-selected="false">Changed Password</a>
+                            <a class="nav-link" id="change-password-tab" data-bs-toggle="tab"
+                                href="#change-password-tab-pane" role="tab" aria-controls="change-password-tab-pane"
+                                aria-selected="false">Changed Password</a>
                         </li>
                     </ul>
                     <div class="tab-content mt-2" id="myTabContent">
-                        <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab">
                             <h4>About</h4>
-                            <p>Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
+                            <p>Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora
+                                libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet
+                                perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
                             <div class="profile-details">
                                 <h5 class="mb-4">Profile Details</h5>
                                 <div class="d-flex detail">
@@ -112,7 +119,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade Editprofile overflow-hidden" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade Editprofile overflow-hidden" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-4">
@@ -141,7 +149,8 @@
                                         <h6 class="mt-1">About</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" id="abouts" class="w-100" placeholder="Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.">
+                                        <input type="text" id="abouts" class="w-100"
+                                            placeholder="Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -173,7 +182,8 @@
                                         <h6 class="mt-1">Address</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="A108 Adam Street New York NY 535022">
+                                        <input type="text" class="w-100"
+                                            placeholder="A108 Adam Street New York NY 535022">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -227,7 +237,8 @@
                                 <div class="row mt-3">
                                     <div class="col-lg-12">
                                         <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <button class="btn btn-primary mb-2" style="background-color: #03045e;">Save Changes</button>
+                                            <button class="btn btn-primary mb-2" style="background-color: #03045e;">Save
+                                                Changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -271,13 +282,15 @@
                                 <div class="row">
                                     <div class="col-lg-12 mt-4">
                                         <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <button class="btn btn-primary mb-2" style="background-color: #03045e; border: none;">Save Changes</button>
+                                            <button class="btn btn-primary mb-2"
+                                                style="background-color: #03045e; border: none;">Save Changes</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade py-4 px-3" id="change-password-tab-pane" role="tabpanel" aria-labelledby="change-password-tab">
+                        <div class="tab-pane fade py-4 px-3" id="change-password-tab-pane" role="tabpanel"
+                            aria-labelledby="change-password-tab">
                             <div class="contianer">
                                 <div class="row">
                                     <div class="col-lg-3">
@@ -306,7 +319,9 @@
                                 <div class="row">
                                     <div class="col-lg-12 mt-4">
                                         <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <button class="btn btn-primary mb-2" style="background-color: #03045e; border: none;">Change Password</button>
+                                            <button class="btn btn-primary mb-2"
+                                                style="background-color: #03045e; border: none;">Change
+                                                Password</button>
                                         </div>
                                     </div>
                                 </div>
