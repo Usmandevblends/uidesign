@@ -112,3 +112,9 @@ body {
       .Editprofile input::placeholder {
         color: #9c9c9c;
       }
+
+      /*  */
+      .tab-pane input {
+        padding: 5px 5px;
+        outline: none;
+      }
