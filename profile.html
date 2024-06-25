@@ -94,7 +94,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade overflow-hidden" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade Editprofile overflow-hidden" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab">
                             <div class="container ">
                                 <div class="row">
                                     <div class="col-lg-4">
@@ -102,12 +103,12 @@
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="d-flex flex-column w-25">
-                                        <img src="./assets/img/user.jpg" width="100px" alt="">
+                                            <img src="./assets/img/user.jpg" width="100px" alt="">
                                             <div class="d-flex  mt-1">
                                                 <button class="btn btn-primary"><i class="fa fa-upload"></i></button>
                                                 <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row mt-4">
@@ -123,9 +124,9 @@
                                         <h6 class="mt-1">About</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora
+                                        <input type="text" id="abouts" class="w-100 " placeholder=" Sunt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora
                                         libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet
-                                        perspiciatis odit. Fuga sequi sed ea saepe at unde." class="">
+                                        perspiciatis odit. Fuga sequi sed ea saepe at unde. " class="">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -157,7 +158,8 @@
                                         <h6 class="mt-1">Address</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="A108 Adam Street New York NY 535022" class="w-100">
+                                        <input type="text" class="w-100"
+                                            placeholder="A108 Adam Street New York NY 535022" class="w-100">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -165,7 +167,8 @@
                                         <h6 class="mt-1">Phone</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="(436) 489-3538x29271" class="w-100">
+                                        <input type="text" class="w-100" placeholder="(436) 489-3538x29271"
+                                            class="w-100">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -189,7 +192,8 @@
                                         <h6 class="mt-1">Twitter Profile</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="https://twitter.com" class="w-100">
+                                        <input type="text" class="w-100" placeholder="https://twitter.com"
+                                            class="w-100">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -197,7 +201,8 @@
                                         <h6 class="mt-1">Facebook profile</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="https://facebook.com" class="w-100">
+                                        <input type="text" class="w-100" placeholder="https://facebook.com"
+                                            class="w-100">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -205,7 +210,8 @@
                                         <h6 class="mt-1">Instagram Profile</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="https://Instagram.com" class="w-100">
+                                        <input type="text" class="w-100" placeholder="https://Instagram.com"
+                                            class="w-100">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -213,17 +219,70 @@
                                         <h6 class="mt-1">Linkedin Profile</h6>
                                     </div>
                                     <div class="col-lg-8">
-                                        <input type="text" class="w-100" placeholder="https://Linkedin.com" class="w-100">
+                                        <input type="text" class="w-100" placeholder="https://Linkedin.com"
+                                            class="w-100">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-lg-12">
+                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                            <button class="btn btn-primary mb-2" style="background-color: #03045e;">Save
+                                                Changes</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    <!-- <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab">...</div> -->
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <h5>Email Notifications</h5>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <ul>
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="scales" name="scales" checked />
+                                                    <label for="scales">Changes made to your account</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="scales" name="scales" checked />
+                                                    <label for="scales">Information on new Products and Services</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="scales" name="scales" checked />
+                                                    <label for="scales">Marketing and Promo Offers</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="scales" name="scales" checked />
+                                                    <label for="scales">Security alerts</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="d-flex align-items-center justify-content-center mt-2">
+                                            <button class="btn btn-primary mb-2 " style="background-color: #03045e; border: none;">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel"
+                            aria-labelledby="disabled-tab">...</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
@@ -233,4 +292,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

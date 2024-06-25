@@ -97,3 +97,18 @@ body {
                 gap: 3rem;
             }
         }
+    /* secibd tab */
+    .Editprofile h6 {
+        color: #000;
+        font-weight: 500;
+      }
+
+      .Editprofile input {
+        padding: 5px 5px;
+        border: 1px solid #03045e;
+        outline: none;
+        border-radius: 2px;
+      }
+      .Editprofile input::placeholder {
+        color: #9c9c9c;
+      }
