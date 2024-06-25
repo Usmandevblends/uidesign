@@ -42,6 +42,10 @@ body {
             background-color: #fff;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
+        .social-icons {
+            margin-left: -15px;
+        }
+
         /* Custom tab styles */
         .nav-tabs {
             border-bottom: 2px solid #007bff;
