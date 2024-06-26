@@ -1,16 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
   var items = document.querySelectorAll(".nav li");
+  var activePage = localStorage.getItem('activePage');
+
+  // Set the active class from localStorage
+  if (activePage) {
+      items.forEach(function (item) {
+          if (item.getAttribute('data-page') === activePage) {
+              item.classList.add("active");
+          }
+      });
+  }
 
   items.forEach(function (item) {
-    item.addEventListener("click", function () {
-      // Remove the active class from all items
-      items.forEach(function (el) {
-        el.classList.remove("active");
-      });
+      item.addEventListener("click", function () {
+          // Remove the active class from all items
+          items.forEach(function (el) {
+              el.classList.remove("active");
+          });
 
-      // Add the active class to the clicked item
-      this.classList.add("active");
-    });
+          // Add the active class to the clicked item
+          this.classList.add("active");
+
+          // Store the active item in localStorage
+          localStorage.setItem('activePage', this.getAttribute('data-page'));
+      });
   });
 });
 
