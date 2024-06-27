@@ -1,30 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var items = document.querySelectorAll(".nav li");
-  var activePage = localStorage.getItem('activePage');
-
-  // Set the active class from localStorage
-  if (activePage) {
-      items.forEach(function (item) {
-          if (item.getAttribute('data-page') === activePage) {
-              item.classList.add("active");
-          }
-      });
-  }
-
-  items.forEach(function (item) {
-      item.addEventListener("click", function () {
-          // Remove the active class from all items
-          items.forEach(function (el) {
-              el.classList.remove("active");
-          });
-
-          // Add the active class to the clicked item
-          this.classList.add("active");
-
-          // Store the active item in localStorage
-          localStorage.setItem('activePage', this.getAttribute('data-page'));
-      });
-  });
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the current URL
+    const currentURL = window.location.href;
+    
+    // Define the mapping of URLs to li elements' IDs
+    const pageMap = {
+        'index.html': 'dashboard',
+        'categories.html': 'categories',
+        'collections.html': 'collections',
+        'blog-posts.html': 'blog-posts',
+        'design-blog.html': 'design-blog',
+        'components.html': 'components'
+    };
+    
+    // Loop through the mapping and add the active class to the matching li
+    for (const [page, id] of Object.entries(pageMap)) {
+        if (currentURL.includes(page)) {
+            document.getElementById(id).classList.add('active');
+        } else {
+            document.getElementById(id).classList.remove('active');
+        }
+    }
 });
 
 

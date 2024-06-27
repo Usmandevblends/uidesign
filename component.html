@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <div class="header-content d-flex align-items-center justify-content-between">
                 <div class="d-flex align-items-center gap-5">
-                    <h4 class="text-white">Mindsparklemag</h4>
+                    <h4 class="text-white d-none d-lg-block">Mindsparklemag</h4>
                     <div class="toggle-btn" onclick="toggleSidebar()">
                         <i class="fa fa-bars"></i>
                     </div>
@@ -47,86 +47,84 @@
     <div class="sidebar-wrapper position-fixed vh-100" id="sidebar">
         <div class="container">
             <ul class="nav pt-4 d-flex flex-column">
-                <li class="active">
-                    <a href="#" class="d-flex align-items-center"><i
-                            class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                <li id="dashboard" class="active" data-page="Dashboard">
+                    <a href="index.html" class="d-flex align-items-center"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
                 </li>
-                <li>
-                    <a href="categorise.html" class="d-flex align-items-center"><i
-                            class="fa-solid fa-list"></i><span>Categories</span></a>
+                <li id="categories" data-page="Categories">
+                    <a href="categories.html" class="d-flex align-items-center"><i class="fa-solid fa-list"></i><span>Categories</span></a>
                 </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center"><i
-                            class="fa-solid fa-compact-disc"></i><span>Collections</span></a>
+                <li id="collections" data-page="Collections">
+                    <a href="#" class="d-flex align-items-center"><i class="fa-solid fa-compact-disc"></i><span>Collections</span></a>
                 </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center blog-post-link"><i
-                            class="fa-brands fa-blogger-b"></i><span>Website Blog Posts</span></a>
+                <li id="blog-posts" data-page="Website Blog Posts">
+                    <a href="blog-posts.html" class="d-flex align-items-center blog-post-link"><i class="fa-brands fa-blogger-b"></i><span>Website Blog Posts</span></a>
                 </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center"><i class="fa-solid fa-gem"></i><span>Design Blog
-                        </span></a>
+                <li id="design-blog" data-page="Design Blog">
+                    <a href="design-blog.html" class="d-flex align-items-center"><i class="fa-solid fa-gem"></i><span>Design Blog</span></a>
                 </li>
-                <li>
-                    <a href="#" class="d-flex align-items-center"><i class="fa-solid fa-code"></i><span>Components</span></a>
+                <li id="components" data-page="Components">
+                    <a href="components.html" class="d-flex align-items-center"><i class="fa-solid fa-code"></i><span>Components</span></a>
                 </li>
             </ul>
         </div>
     </div>
+    
     <!-- Main Content -->
     <div class="main-content mt-5" id="mainContent">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="accordion accordion-flush py-xxl-0" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                    aria-controls="flush-collapseOne">
-                                    What is Your Name ?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Placeholder content for this accordion, which is intended
-                                    to demonstrate the <code>.accordion-flush</code> class.
-                                    This is the first item's accordion body.
+                    <div class="card" style="height: 250px; background-color: #fff;">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        What is Your Name ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Placeholder content for this accordion, which is intended
+                                        to demonstrate the <code>.accordion-flush</code> class.
+                                        This is the first item's accordion body.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                    aria-controls="flush-collapseTwo">
-                                    What is Your Favorite Sports?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Placeholder content for this accordion, which is intended
-                                    to demonstrate the <code>.accordion-flush</code> class.
-                                    This is the second item's accordion body. Let's imagine
-                                    this being filled with some actual content.
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        What is Your Favorite Sports?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Placeholder content for this accordion, which is intended
+                                        to demonstrate the <code>.accordion-flush</code> class.
+                                        This is the second item's accordion body. Let's imagine
+                                        this being filled with some actual content.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                    aria-controls="flush-collapseThree">
-                                    Are You 18 Plus ?
-                                </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">
-                                    Placeholder content for this accordion, which is intended
-                                    to demonstrate the <code>.accordion-flush</code> class. .
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Are You 18 Plus ?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Placeholder content for this accordion, which is intended
+                                        to demonstrate the <code>.accordion-flush</code> class. .
+                                    </div>
                                 </div>
                             </div>
                         </div>
