@@ -48,42 +48,76 @@
         <div class="container">
             <ul class="nav pt-4 d-flex flex-column">
                 <li id="dashboard" class="active" data-page="Dashboard">
-                    <a href="index.html" class="d-flex align-items-center"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                    <a href="index.html" class="d-flex align-items-center"><i
+                            class="fa fa-dashboard"></i><span>Dashboard</span></a>
                 </li>
                 <li id="categories" data-page="Categories">
-                    <a href="categories.html" class="d-flex align-items-center"><i class="fa-solid fa-list"></i><span>Categories</span></a>
+                    <a href="categories.html" class="d-flex align-items-center"><i
+                            class="fa-solid fa-list"></i><span>Categories</span></a>
                 </li>
                 <li id="collections" data-page="Collections">
-                    <a href="#" class="d-flex align-items-center"><i class="fa-solid fa-compact-disc"></i><span>Collections</span></a>
+                    <a href="#" class="d-flex align-items-center"><i
+                            class="fa-solid fa-compact-disc"></i><span>Collections</span></a>
                 </li>
                 <li id="blog-posts" data-page="Website Blog Posts">
-                    <a href="blog-posts.html" class="d-flex align-items-center blog-post-link"><i class="fa-brands fa-blogger-b"></i><span>Website Blog Posts</span></a>
+                    <a href="blog-posts.html" class="d-flex align-items-center blog-post-link"><i
+                            class="fa-brands fa-blogger-b"></i><span>Website Blog Posts</span></a>
                 </li>
                 <li id="design-blog" data-page="Design Blog">
-                    <a href="design-blog.html" class="d-flex align-items-center"><i class="fa-solid fa-gem"></i><span>Design Blog</span></a>
+                    <a href="design-blog.html" class="d-flex align-items-center"><i
+                            class="fa-solid fa-gem"></i><span>Design Blog</span></a>
                 </li>
                 <li id="components" data-page="Components">
-                    <a href="component.html" class="d-flex align-items-center"><i class="fa-solid fa-code"></i><span>Components</span></a>
+                    <a href="component.html" class="d-flex align-items-center"><i
+                            class="fa-solid fa-code"></i><span>Components</span></a>
                 </li>
                 <li id="components" data-page="Components">
-                    <a href="chat.html" class="d-flex align-items-center"><i class="fa-solid fa-message"></i><span>Chat</span></a>
+                    <a href="chat.html" class="d-flex align-items-center"><i
+                            class="fa-solid fa-message"></i><span>Chat</span></a>
                 </li>
             </ul>
         </div>
     </div>
-    
+
     <!-- Main Content -->
     <div class="main-content mt-5" id="mainContent">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="card mb-4">
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between
+                <div class="col-lg-5 gx-5">
+                    <div class="chat">
+                        <div class="chat-header d-flex  align-items-center justify-content-between">
+                            <div class="d-flex flex-column gap-0 lh-1">
+                                <h5 class="lh-1 fw-semibold">Chats</h5>
+                                <span>Recent Chats</span>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary"> <i class="fa fa-plus"></i> Create New Chart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 gx-5 ">
+                    <div class="chatpage">
+                        <div class="chat-header">
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="profile-image d-flex align-items-center gap-2" width="50px">
+                                    <img src="./assets/img/user2.jpg" width="50px" height="50px" class="rounded-circle object-fit-cover"alt="">
+                                    <div class="lh-1 mt-1">
+                                        <h6 class="fw-bold lh-1">Nika Jerrardo</h6>
+                                        <span class="text-primary" style="font-size: 12px; font-weight: 500;">Last online 5 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="icons d-flex align-items-center gap-5">
+                                    <i class="fas fa-paperclip fw-bold fs-5"></i>
+                                    <i class="fas fa-ellipsis-v fw-bold fs-5"></i> 
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    <script src="./assets/js/script.js"></script>
+        <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
