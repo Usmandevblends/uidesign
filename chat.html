@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.tiny.cloud/1/bvrkfdia025n6x5ai3g8oem91ihptg6suiptqpidvbrdb371/tinymce/7/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/profile.css" />
+    <link rel="stylesheet" href="./assets/css/chat.css" />
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="header pt-1 position-fixed w-100 top-0">
+        <div class="container-fluid">
+            <div class="header-content d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-5">
+                    <h4 class="text-white d-none d-lg-block">Mindsparklemag</h4>
+                    <div class="toggle-btn" onclick="toggleSidebar()">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown ms-auto d-flex align-items-center h-25">
+                    <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle text-white"
+                        id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/Img/user.jpg" alt="User" width="40" height="40" class="rounded-circle" />
+                        <span class="ps-2 text-white fs-5 pt-1">Jhon deo</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar-wrapper position-fixed vh-100" id="sidebar">
+        <div class="container">
+            <ul class="nav pt-4 d-flex flex-column">
+                <li id="dashboard" class="active" data-page="Dashboard">
+                    <a href="index.html" class="d-flex align-items-center"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                </li>
+                <li id="categories" data-page="Categories">
+                    <a href="categories.html" class="d-flex align-items-center"><i class="fa-solid fa-list"></i><span>Categories</span></a>
+                </li>
+                <li id="collections" data-page="Collections">
+                    <a href="#" class="d-flex align-items-center"><i class="fa-solid fa-compact-disc"></i><span>Collections</span></a>
+                </li>
+                <li id="blog-posts" data-page="Website Blog Posts">
+                    <a href="blog-posts.html" class="d-flex align-items-center blog-post-link"><i class="fa-brands fa-blogger-b"></i><span>Website Blog Posts</span></a>
+                </li>
+                <li id="design-blog" data-page="Design Blog">
+                    <a href="design-blog.html" class="d-flex align-items-center"><i class="fa-solid fa-gem"></i><span>Design Blog</span></a>
+                </li>
+                <li id="components" data-page="Components">
+                    <a href="component.html" class="d-flex align-items-center"><i class="fa-solid fa-code"></i><span>Components</span></a>
+                </li>
+                <li id="components" data-page="Components">
+                    <a href="chat.html" class="d-flex align-items-center"><i class="fa-solid fa-message"></i><span>Chat</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content mt-5" id="mainContent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card mb-4">
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
