@@ -1,9 +1,41 @@
+body {
+    background-color: #f4f8fb !important;
+}
 
-
-
-
+.chatpage {
+    background-color: #f8fcff;
+    padding: 0px 10px;
+    width: 100%;
+}
 
 .chatpage .chat-header .icons i {
     width: 50px;
     height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+hr {
+    border: 1px solid #1563ff;
+}
+/* scroll bar */
+/* Scrollbar overall style */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the thumb on hover */
 }
