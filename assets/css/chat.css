@@ -4,14 +4,15 @@ body {
 
 .chatpage {
     background-color: #f8fcff;
-    padding: 0px 10px;
+    padding: 5px 10px;
     width: 100%;
 }
 
 .chatpage .chat-header .icons i {
-    width: 50px;
-    height: 50px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(15, 79, 207, 0.35) 0px 5px 15px;
+    font-size: 15px !important;
 }
 
 hr {
@@ -31,11 +32,12 @@ hr {
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the thumb */
+    background: #03045e; /* Color of the thumb */
     border-radius: 10px; /* Rounded corners */
 }
 
 /* Scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the thumb on hover */
+    background: #03055eb8; /* Color of the thumb on hover */
+    transition: 0.5s;
 }
