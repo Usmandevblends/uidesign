@@ -37,6 +37,21 @@ body {
     box-shadow: none !important;
 }
 
+.chat-background {
+    background: rgb(179, 176, 235);
+    background: linear-gradient(
+        228deg,
+        rgba(179, 176, 235, 1) 0%,
+        rgba(241, 176, 236, 1) 32%,
+        rgba(198, 181, 202, 1) 65%,
+        rgba(193, 244, 255, 1) 100%
+    );
+}
+
+.receiver-message {
+    background: rgb(9,0,180);
+    background: linear-gradient(345deg, rgba(9,0,180,1) 0%, rgba(120,8,111,1) 32%, rgba(210,64,84,1) 65%, rgba(143,73,33,1) 100%);
+}
 /* scroll bar */
 /* Scrollbar overall style */
 ::-webkit-scrollbar {

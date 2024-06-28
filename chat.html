@@ -87,7 +87,7 @@
                         <div class="chat-header d-flex  align-items-center justify-content-between">
                             <div class="d-flex flex-column gap-0 lh-1">
                                 <h5 class="lh-1 fw-semibold">Chats</h5>
-                                <span>Recent Chats</span>
+                                <span class="text-secondary lh-1">Recent Chats</span>
                             </div>
                             <div>
                                 <button class="btn btn-primary"> <i class="fa fa-plus"></i> Create New Chart</button>
@@ -101,37 +101,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7  g-5">
-                    <div class="chatpage">
+                <div class="col-lg-7 pt-2 chat-background">
+                    <div class="chatpage chat-background">
                         <div class="chat-header">
                             <div class="d-flex align-items-center justify-content-between ">
-                                <div class="profile-image d-flex align-items-center gap-2" width="50px">
+                                <div class="profile-image d-flex align-items-center gap-2 position-relative"
+                                    width="50px">
                                     <img src="./assets/img/user2.jpg" width="50px" height="50px"
                                         class="rounded-circle object-fit-cover" alt="">
                                     <div class="lh-1 mt-1">
-                                        <h6 class="fw-bold lh-1">Nika Jerrardo</h6>
-                                        <span class="text-primary" style="font-size: 12px; font-weight: 500;">Last
+                                        <h6 class="fw-bold m-0">Nika Jerrardo</h6>
+                                        <span style="font-size: 12px; font-weight: 500;">Last
                                             online 5 hours ago</span>
                                     </div>
                                 </div>
                                 <div class="icons d-flex align-items-center gap-3">
                                     <i
-                                        class="fas fa-paperclip fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
+                                        class="bg-danger-subtle fas fa-paperclip fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
                                     <i
-                                        class="fas fa-ellipsis-v fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
+                                        class="bg-white fas fa-ellipsis-v fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
                                 </div>
                             </div>
                         </div>
                         <hr>
                         <div class="chat-body" id="chatBody"
                             style="height: 300px; overflow-y: scroll; overflow-x: hidden;">
-                            <div class=" d-flex align-items-center justify-content-center gap-2">
+                            <div class=" d-flex justify-content-center gap-2">
                                 <div class="">
                                     <img src="./assets/img/user2.jpg" width="50px" height="50px"
                                         class="rounded-circle object-fit-cover" alt="">
                                 </div>
                                 <div class="message">
-                                    <p class="bg-primary text-white p-2 rounded-3">Hello! Finally Found the time to
+                                    <p
+                                        class="bg-primary p-2 receiver-message rounded-bottom-4 rounded-end-4 text-white">
+                                        Hello! Finally Found
+                                        the time to
                                         write to you ) I nedd you help in creating interactive animations for my mobile
                                         application</p>
                                 </div>
@@ -139,9 +143,20 @@
                                     <i class="px-3 text-secondary fs-5 fa fa-ellipsis-h"></i>
                                 </div>
                             </div>
+                            <div class="flex-row-reverse d-flex  pe-5">
+                                <div class="message">
+                                    <p class="bg-light text-dark-50 p-2 rounded-bottom-4 rounded-end-4">Hello! Finally
+                                        Found
+                                        the time to
+                                        write to you </p>
+                                </div>
+                                <div>
+                                    <i class="px-3 text-secondary fs-5 fa fa-ellipsis-h"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="chat-footer">
-                            
+
                         </div>
                     </div>
                 </div>
