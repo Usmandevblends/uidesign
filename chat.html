@@ -80,9 +80,9 @@
     </div>
     <!-- Main Content -->
     <div class="main-content mt-5" id="mainContent">
-        <div class="container-fluid">
+        <div class="container-fluid card border-0  shadow">
             <div class="row">
-                <div class="col-lg-5 gx-5 g-5">
+                <div class="col-lg-5 gx-5 g-5 border-end">
                     <div class="chat mt-1">
                         <div class="chat-header d-flex  align-items-center justify-content-between">
                             <div class="d-flex flex-column gap-0 lh-1">
@@ -93,9 +93,15 @@
                                 <button class="btn btn-primary"> <i class="fa fa-plus"></i> Create New Chart</button>
                             </div>
                         </div>
+                        <div class="mt-4">
+                            <div class="form-group has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7 gx-5  g-5">
+                <div class="col-lg-7   g-5">
                     <div class="chatpage">
                         <div class="chat-header">
                             <div class="d-flex align-items-center justify-content-between ">
@@ -117,10 +123,25 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="chat-body" id="chatBody" style="height: 300px; overflow-y: scroll; overflow-x: hidden;">
-                            <div>
-                                
+                        <div class="chat-body" id="chatBody"
+                            style="height: 300px; overflow-y: scroll; overflow-x: hidden;">
+                            <div class=" d-flex align-items-center justify-content-center gap-2">
+                                <div class="">
+                                    <img src="./assets/img/user2.jpg" width="50px" height="50px"
+                                        class="rounded-circle object-fit-cover" alt="">
+                                </div>
+                                <div class="message">
+                                    <p class="bg-primary text-white p-2 rounded-3">Hello! Finally Found the time to
+                                        write to you ) I nedd you help in creating interactive animations for my mobile
+                                        application</p>
+                                </div>
+                                <div>
+                                    <i class="px-3 text-secondary fs-5 fa fa-ellipsis-h"></i>
+                                </div>
                             </div>
+                        </div>
+                        <div class="chat-footer">
+
                         </div>
                     </div>
                 </div>
