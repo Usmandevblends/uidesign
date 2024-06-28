@@ -2,10 +2,8 @@ body {
     background-color: #f4f8fb !important;
 }
 
-.chatpage {
-    background-color: #f8fcff;
-    padding: 5px 10px;
-    width: 100%;
+.chat-container {
+    height: 600px;
 }
 
 .chatpage .chat-header .icons i {
@@ -13,6 +11,30 @@ body {
     height: 40px;
     box-shadow: rgba(15, 79, 207, 0.35) 0px 5px 15px;
     font-size: 15px !important;
+}
+
+.onlinestatus {
+    background-color: #38c70f;
+    width: 10px;
+    height: 10px;
+    right: 150px;
+    top: 0px;
+    border-radius: 5rem;
+    border: 1px solid #fff;
+}
+
+
+.hbtn {
+    background: rgb(107, 100, 240);
+    background: linear-gradient(
+        345deg,
+        rgba(107, 100, 240, 1) 0%,
+        rgba(238, 113, 228, 1) 46%,
+        rgba(224, 105, 37, 1) 89%
+    );
+}
+.hbtn:hover {
+    background: none;
 }
 
 .has-search .form-control {
@@ -49,8 +71,14 @@ body {
 }
 
 .receiver-message {
-    background: rgb(9,0,180);
-    background: linear-gradient(345deg, rgba(9,0,180,1) 0%, rgba(120,8,111,1) 32%, rgba(210,64,84,1) 65%, rgba(143,73,33,1) 100%);
+    background: rgb(9, 0, 180);
+    background: linear-gradient(
+        345deg,
+        rgba(9, 0, 180, 1) 0%,
+        rgba(120, 8, 111, 1) 32%,
+        rgba(210, 64, 84, 1) 65%,
+        rgba(143, 73, 33, 1) 100%
+    );
 }
 /* scroll bar */
 /* Scrollbar overall style */

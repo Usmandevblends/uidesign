@@ -80,8 +80,8 @@
     </div>
     <!-- Main Content -->
     <div class="main-content mt-5" id="mainContent">
-        <div class="container-fluid card border-0  shadow">
-            <div class="row">
+        <div class="container-fluid card border-0  shadow chat-container">
+            <div class="row chat-container">
                 <div class="col-lg-5 gx-5 g-5 border-end">
                     <div class="chat mt-1">
                         <div class="chat-header d-flex  align-items-center justify-content-between">
@@ -90,7 +90,8 @@
                                 <span class="text-secondary lh-1">Recent Chats</span>
                             </div>
                             <div>
-                                <button class="btn btn-primary"> <i class="fa fa-plus"></i> Create New Chart</button>
+                                <button class="btn btn-primary hbtn"> <i class="fa fa-plus"></i> Create New
+                                    Chart</button>
                             </div>
                         </div>
                         <div class="mt-4">
@@ -102,13 +103,14 @@
                     </div>
                 </div>
                 <div class="col-lg-7 pt-2 chat-background">
-                    <div class="chatpage chat-background">
+                    <div class="chatpage">
                         <div class="chat-header">
                             <div class="d-flex align-items-center justify-content-between ">
                                 <div class="profile-image d-flex align-items-center gap-2 position-relative"
                                     width="50px">
                                     <img src="./assets/img/user2.jpg" width="50px" height="50px"
-                                        class="rounded-circle object-fit-cover" alt="">
+                                        class="rounded-circle object-fit-cover position-relative" alt="">
+                                    <div class="onlinestatus position-absolute"></div>
                                     <div class="lh-1 mt-1">
                                         <h6 class="fw-bold m-0">Nika Jerrardo</h6>
                                         <span style="font-size: 12px; font-weight: 500;">Last
@@ -124,8 +126,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="chat-body" id="chatBody"
-                            style="height: 300px; overflow-y: scroll; overflow-x: hidden;">
+                        <div class="chat-body" id="chatBody" style="height: 450px;">
                             <div class=" d-flex justify-content-center gap-2">
                                 <div class="">
                                     <img src="./assets/img/user2.jpg" width="50px" height="50px"
@@ -156,7 +157,7 @@
                             </div>
                         </div>
                         <div class="chat-footer">
-
+                            <input type="text" class="form-control rounded-5" placeholder="Type your message here ..." />
                         </div>
                     </div>
                 </div>
