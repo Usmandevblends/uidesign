@@ -82,15 +82,15 @@
     <div class="main-content mt-5" id="mainContent">
         <div class="container-fluid card border-0  shadow chat-container">
             <div class="row chat-container">
-                <div class="col-lg-5 gx-5 g-5 border-end">
+                <div class="col-lg-5 border-end">
                     <div class="chat mt-1">
                         <div class="chat-header d-flex  align-items-center justify-content-between">
-                            <div class="d-flex flex-column gap-0 lh-1">
-                                <h5 class="lh-1 fw-semibold">Chats</h5>
-                                <span class="text-secondary lh-1">Recent Chats</span>
+                            <div class="d-flex flex-column gap-0 pt-1 m-0">
+                                <h5 class="m-0 fw-semibold">Chats</h5>
+                                <span class="m-0 text-secondary">Recent Chats</span>
                             </div>
                             <div>
-                                <button class="btn btn-primary hbtn"> <i class="fa fa-plus"></i> Create New
+                                <button class="btn btn-primary hbtn"><i class="fa fa-plus"></i> Create New
                                     Chart</button>
                             </div>
                         </div>
@@ -98,6 +98,50 @@
                             <div class="form-group has-search">
                                 <span class="fa fa-search form-control-feedback"></span>
                                 <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
+                        <div class="container-fluid mt-4">
+                            <div class="chat-list-container overflow-auto">
+                                <div class="chat-list d-flex flex-column gap-4">
+                                    <div class="chartcard card py-2 px-3 border-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="profile-image d-flex align-items-center gap-2 position-relative">
+                                                <img src="./assets/img/user3.jpg" class="rounded-circle object-fit-cover position-relative" alt="">
+                                                <div class="onlinestatus position-absolute" style="left: 37px;"></div>
+                                                <div>
+                                                    <h6 class="fw-bold m-0">Luy Robin</h6>
+                                                    <span class="text-primary fw-semibold">....write</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="fw-semibold text-secondary">1 minute ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 d-flex align-items-center justify-content-between">
+                                            <p class="text-secondary">Most of its text is made up from sections 1.10.32-3 of Cicero's D finibus Bonorum et malorum (ON the boundaries of Fodds and Evils: finlbus may also be translated as Purposes),</p>
+                                            <span class="badge rounded-circle text-bg-danger mb-5">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="chartcard card py-2 px-3 border-0">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="profile-image d-flex align-items-center gap-2 position-relative">
+                                                <img src="./assets/img/user3.jpg" class="rounded-circle object-fit-cover position-relative" alt="">
+                                                <div class="onlinestatus position-absolute" style="left: 37px;"></div>
+                                                <div>
+                                                    <h6 class="fw-bold m-0">Luy Robin</h6>
+                                                    <span class="text-primary fw-semibold">....write</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span class="fw-semibold text-secondary">1 minute ago</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4 d-flex align-items-center justify-content-between">
+                                            <p class="text-secondary">Most of its text is made up from sections 1.10.32-3 of Cicero's D finibus Bonorum et malorum (ON the boundaries of Fodds and Evils: finlbus may also be translated as Purposes),</p>
+                                            <span class="badge rounded-circle text-bg-danger mb-5">2</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +163,7 @@
                                 </div>
                                 <div class="icons d-flex align-items-center gap-3">
                                     <i
-                                        class="bg-danger-subtle fas fa-paperclip fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
+                                        class="bg-light border-info fas fa-paperclip fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
                                     <i
                                         class="bg-white fas fa-ellipsis-v fw-bold fs-5 d-flex align-items-center justify-content-center rounded-circle"></i>
                                 </div>
@@ -157,7 +201,7 @@
                             </div>
                         </div>
                         <div class="chat-footer">
-                            <input type="text" class="form-control rounded-5" placeholder="Type your message here ..." />
+                            <input type="text" class="form-control rounded-5 border-info" placeholder="Type your message here ..." />
                         </div>
                     </div>
                 </div>

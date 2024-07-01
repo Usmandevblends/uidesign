@@ -2,8 +2,13 @@ body {
     background-color: #f4f8fb !important;
 }
 
+span {
+    font-family: "Montserrat", sans-serif;
+}
+
 .chat-container {
     height: 600px;
+    background: #e5f4ff;
 }
 
 .chatpage .chat-header .icons i {
@@ -26,17 +31,13 @@ body {
 
 .hbtn {
     background: rgb(107, 100, 240);
-    background: linear-gradient(
-        345deg,
-        rgba(107, 100, 240, 1) 0%,
-        rgba(238, 113, 228, 1) 46%,
-        rgba(224, 105, 37, 1) 89%
-    );
+    transition: 0.5s;
 }
 .hbtn:hover {
     background: none;
+    border: 1px solid rgb(107, 100, 240);
+    color: rgb(107, 100, 240);
 }
-
 .has-search .form-control {
     padding-left: 2.375rem;
     border: primary;
@@ -80,15 +81,24 @@ body {
         rgba(143, 73, 33, 1) 100%
     );
 }
+.chat-list-container {
+    max-height: 400px; /* Adjust the height as needed */
+    padding-right: 10px; /* Add padding to create space for scrollbar */
+    margin-right: 10px; /* Add margin to create space for scrollbar */
+}
+.profile-image img {
+    width: 50px;
+    height: 50px;
+}
 /* scroll bar */
 /* Scrollbar overall style */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 10px; /* Width of the scrollbar */
 }
 
 /* Scrollbar track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
+    background: #B2B7C3; /* Color of the track */
     border-radius: 10px; /* Rounded corners */
 }
 
