@@ -62,7 +62,6 @@ p {
 
 .form-control:focus {
     outline: none !important;
-    box-shadow: none !important;
 }
 
 #chatBody {
@@ -104,9 +103,6 @@ p {
     height: 50px;
 }
 
-
-
-
 /* scroll bar */
 /* Scrollbar overall style */
 ::-webkit-scrollbar {
@@ -129,9 +125,25 @@ p {
 
 @media (max-width:992px) {
     p {
-        font-size: 12px !important;
+        font-size: 15px !important;
     }
     span {
-        font-size: 12px !important;
+        font-size: 15px !important;
     }
+}
+
+@media (max-width:1092px) {
+    p {
+        font-size: 15px !important;
+    }
+    span {
+        font-size: 10px !important;
+    }
+    h6 {
+        font-size: 10px;
+    }
+    .chartcard {
+
+    }
+
 }
