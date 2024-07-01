@@ -85,3 +85,8 @@ function toggleSidebar() {
         });
     });
 });
+
+    // Initialize emoji picker
+    const input = document.querySelector('#messageInput');
+    const picker = new EmojiPicker();
+    picker.listenOn(input);

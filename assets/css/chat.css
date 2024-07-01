@@ -6,6 +6,10 @@ span {
     font-family: "Montserrat", sans-serif;
 }
 
+p {
+    font-size: 15px;
+}
+
 .chat-container {
     height: 600px;
     background: #e5f4ff;
@@ -61,6 +65,13 @@ span {
     box-shadow: none !important;
 }
 
+#chatBody {
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 450px; /* Set a fixed height */
+    padding: 10px; /* Optional, for some internal spacing */
+}
+
+
 .chat-background {
     background: rgb(179, 176, 235);
     background: linear-gradient(
@@ -84,6 +95,7 @@ span {
 }
 .chat-list-container {
     max-height: 400px; /* Adjust the height as needed */
+    width: 100%;
     padding-right: 10px; /* Add padding to create space for scrollbar */
     margin-right: 10px; /* Add margin to create space for scrollbar */
 }
@@ -92,21 +104,34 @@ span {
     height: 50px;
 }
 
+
+
+
 /* scroll bar */
 /* Scrollbar overall style */
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 10px; 
     height: 100px;
 }
 
 /* Scrollbar track */
 ::-webkit-scrollbar-track {
-    background: #B2B7C3; /* Color of the track */
-    border-radius: 10px; /* Rounded corners */
+    background: #ffffff;
+    border-radius: 10px; 
 }
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background: #ffffff; /* Color of the thumb */
-    border-radius: 10px; /* Rounded corners */
+    background: rgb(107, 100, 240); 
+    border-radius: 10px; 
+}
+
+
+@media (max-width:992px) {
+    p {
+        font-size: 12px !important;
+    }
+    span {
+        font-size: 12px !important;
+    }
 }
