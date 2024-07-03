@@ -84,15 +84,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Initialize Emoji Picker
-const picker = new EmojiButton();
-const button = document.querySelector("#emojiButton");
-const input = document.querySelector("#messageInput");
 
-button.addEventListener("click", () => {
-  picker.togglePicker(button);
-});
-
-picker.on("emoji", (emoji) => {
-  input.value += emoji;
-});
