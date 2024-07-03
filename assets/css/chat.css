@@ -60,8 +60,12 @@ p {
     color: #aaa;
 }
 
+
 .form-control:focus {
     outline: none !important;
+}
+.form-control:placeholder {
+    padding-left: 100px;
 }
 
 #chatBody {
