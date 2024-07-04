@@ -3,3 +3,12 @@
     height: 4px;
     background-color: #7AC400;
 }
+
+.card {
+    background: #fff;
+    width: 350px;
+}
+
+.card-content img {
+    width: 170px !important;
+}
