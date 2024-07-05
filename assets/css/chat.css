@@ -20,6 +20,8 @@ p {
     height: 40px;
     box-shadow: rgba(15, 79, 207, 0.35) 0px 5px 15px;
     font-size: 15px !important;
+    color: #fff;
+    
 }
 
 .onlinestatus {
@@ -107,6 +109,18 @@ p {
     height: 50px;
 }
 
+.zipfile {
+    width: 160px;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.zipfile .zipicon {
+    background-color: rgba(255,255,255,0.3);
+    padding: 8px 10px;
+    border-radius:10px ;
+}
 
 /* scroll bar */
 /* Scrollbar overall style */
