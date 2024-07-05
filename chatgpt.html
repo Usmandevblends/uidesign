@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT 5</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 800px;
+            height: 80%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5rem;
+            border-radius: 10px 10px 0 0;
+        }
+        .chat-body {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .chat-footer {
+            display: flex;
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 0 0 10px 10px;
+        }
+        .chat-footer input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+        .chat-footer button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .message.user {
+            justify-content: flex-end;
+        }
+        .message-content {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 20px;
+        }
+        .message.user .message-content {
+            background: #007bff;
+            color: white;
+        }
+        .message.bot .message-content {
+            background: #e2e2e2;
+        }
+        .message-content img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            ChatGPT 5
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Messages will appear here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Type a message">
+            <button id="sendButton" class="btn btn-primary">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const sendButton = document.getElementById('sendButton');
+        const userInput = document.getElementById('userInput');
+        const chatBody = document.getElementById('chatBody');
+
+        sendButton.addEventListener('click', () => {
+            const message = userInput.value;
+            if (message.trim() !== '') {
+                addMessage('user', message);
+                userInput.value = '';
+                fetchSearchResults(message);
+            }
+        });
+
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendButton.click();
+            }
+        });
+
+        function addMessage(sender, message, isHtml = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            const messageContent = document.createElement('div');
+            messageContent.classList.add('message-content');
+            if (isHtml) {
+                messageContent.innerHTML = message;
+            } else {
+                messageContent.textContent = message;
+            }
+            messageDiv.appendChild(messageContent);
+            chatBody.appendChild(messageDiv);
+            chatBody.scrollTop = chatBody.scrollHeight;
+        }
+
+        async function fetchSearchResults(query) {
+            const response = await fetch(`https://api.duckduckgo.com/?q=${query}&format=json&pretty=1`);
+            const data = await response.json();
+            if (data.Abstract) {
+                addMessage('bot', data.Abstract, true);
+            } else if (data.RelatedTopics && data.RelatedTopics.length > 0) {
+                data.RelatedTopics.slice(0, 3).forEach(topic => {
+                    if (topic.Text) {
+                        let message = topic.Text;
+                        if (topic.Icon && topic.Icon.URL) {
+                            message = `<img src="https://duckduckgo.com${topic.Icon.URL}" alt="${topic.Text}"><br>${message}`;
+                        }
+                        addMessage('bot', message, true);
+                    }
+                });
+            } else {
+                addMessage('bot', 'No results found.');
+            }
+        }
+    </script>
+</body>
+</html>
+
